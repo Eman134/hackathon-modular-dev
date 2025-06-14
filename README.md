@@ -11,7 +11,7 @@ Simular a estrutura de um hackathon com foco em modularidade, permitindo:
 - Associação de projetos às equipes
 - Agendamento de apresentações
 - Gerenciamento centralizado por meio de classes Singleton
-- 
+
 ## 🧠 Estrutura do Projeto
 
 ![UML](uml.png)
