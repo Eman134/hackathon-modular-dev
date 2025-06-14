@@ -14,7 +14,7 @@ Simular a estrutura de um hackathon com foco em modularidade, permitindo:
 - 
 ## 🧠 Estrutura do Projeto
 
-[!uml](uml.png)
+![UML](uml.png)
 
 ## 👨‍🎓 Desenvolvido por
 Kayke Emanoel de Souza Santos • PUC-Minas — 2025
