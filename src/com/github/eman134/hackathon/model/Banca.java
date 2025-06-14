@@ -1,14 +1,22 @@
 package src.com.github.eman134.hackathon.model;
 
+import src.com.github.eman134.hackathon.base.IAvaliavel;
+
+import java.util.HashMap;
 import java.util.Map;
 
-public class Banca {
+public class Banca implements IAvaliavel {
 
     private Projeto projetoAvaliado;
-    private Map<Jurado, Integer> jurados;
+    private Map<Jurado, Integer> jurados = new HashMap<>();
 
+    @Override
     public Double calcularNotaFinal() {
-        return jurados.values().stream().mapToInt(nota -> nota).average().getAsDouble();
+        return jurados.values()
+                .stream()
+                .mapToInt(Integer::intValue)
+                .average()
+                .orElse(0.0);
     }
 
     public Map<Jurado, Integer> getJurados() {
@@ -23,4 +31,11 @@ public class Banca {
         jurados.remove(jurado);
     }
 
+    public Projeto getProjetoAvaliado() {
+        return projetoAvaliado;
+    }
+
+    public void setProjetoAvaliado(Projeto projetoAvaliado) {
+        this.projetoAvaliado = projetoAvaliado;
+    }
 }

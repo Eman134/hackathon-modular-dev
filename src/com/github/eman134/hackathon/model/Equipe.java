@@ -5,10 +5,20 @@ import java.util.List;
 
 public class Equipe {
 
+    private String nome;
     private List<Estudante> membros;
 
-    public Equipe(){
+    public Equipe(String nome){
         membros = new ArrayList<Estudante>();
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public void addMembro(Estudante membro) {

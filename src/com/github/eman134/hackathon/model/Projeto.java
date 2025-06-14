@@ -5,9 +5,19 @@ public class Projeto {
     private Profissional orientador;
     private Equipe equipe;
     private Double notaFinal;
+    private String nomeProjeto;
 
-    public Projeto(Profissional orientador, Equipe equipe) {
+    public String getNomeProjeto() {
+        return nomeProjeto;
+    }
+
+    public void setNomeProjeto(String nomeProjeto) {
+        this.nomeProjeto = nomeProjeto;
+    }
+
+    public Projeto(String nomeProjeto, Profissional orientador, Equipe equipe) {
         this.orientador = orientador;
+        this.nomeProjeto = nomeProjeto;
         this.equipe = equipe;
     }
 
