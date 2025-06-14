@@ -9,7 +9,8 @@ Simular a estrutura de um hackathon com foco em modularidade, permitindo:
 
 - Cadastro de equipes participantes
 - Associação de projetos às equipes
-- Agendamento de apresentações
+- Sistema de banca avaliadora dos projetos
+- Apresentações
 - Gerenciamento centralizado por meio de classes Singleton
 
 ## 🧠 Estrutura do Projeto
