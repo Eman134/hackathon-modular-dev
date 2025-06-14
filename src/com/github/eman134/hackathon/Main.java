@@ -36,15 +36,19 @@ public class Main {
             banca2.addJuradoNota(new Jurado("JuradoB" + i, PucMinas), 5 + i);
         }
 
+        Sala local = new Sala("Sala 1");
+
         Apresentacao apresentacao1 = new Apresentacao();
         apresentacao1.setProjeto(projeto1);
         apresentacao1.setBanca(banca1);
         apresentacao1.setDataHora(LocalDateTime.now());
+        apresentacao1.setLocal(local);
 
         Apresentacao apresentacao2 = new Apresentacao();
         apresentacao2.setProjeto(projeto2);
         apresentacao2.setBanca(banca2);
         apresentacao2.setDataHora(LocalDateTime.now());
+        apresentacao2.setLocal(local);
 
         ApresentacaoService apresentacaoService = new ApresentacaoService();
 
